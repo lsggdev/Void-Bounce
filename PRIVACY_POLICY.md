@@ -1,9 +1,9 @@
 # Privacy Policy — Void Bounce
 
 **Developer:** TICTICTIC
-**Application:** Void Bounce (Android) — `com.lucas.bolanoscilindros`
+**Application:** Void Bounce (Android) — `void.bounce`
 **Privacy contact:** Lsg.g.dev@gmail.com
-**Effective date:** 17 September 2026 — version 1.0
+**Effective date:** 21 October 2026 — version 1.1
 **Target audience:** general audience, 13 years and older
 
 This policy explains what data the game Void Bounce accesses, collects, uses and shares — with whom, for
@@ -14,7 +14,7 @@ how long, and how you can have it deleted.
 ## 1. The whole thing on one screen
 
 The game has **no server of its own**, and TICTICTIC keeps no database of players. Everything that leaves
-your device goes to Google services and is handled under Google's own policies.
+your device goes to Google services or to TikTok and is handled under their own policies.
 
 | Data | What it is for | Who processes it | Where it lives |
 | --- | --- | --- | --- |
@@ -22,10 +22,14 @@ your device goes to Google services and is handled under Google's own policies.
 | Your score | Your rank on the leaderboard | Google Play Games | Google servers |
 | Advertising ID and device data | Serving and measuring ads | Google AdMob | Google servers |
 | Purchase confirmation | Delivering the item you bought | Google Play Billing | Google servers |
+| App instance ID, advertising ID and in-game events (levels, buttons, purchases) | Understanding how the game is played | Google Firebase Analytics | Google servers |
+| Crash reports and device model | Finding and fixing bugs | Google Firebase Crashlytics | Google servers |
+| Advertising ID, device data, install, app opens and purchases | Measuring our ads on TikTok | TikTok (TikTok Events SDK) | TikTok servers |
 | Progress, coins and cosmetics | Letting you pick up where you left off | The game only | On your device only |
 
-What is **never** collected: your location, your contacts, your photos, your microphone, your camera,
-your files, your phone number and your card details. Nothing is sold to anyone.
+What is **never** collected: your precise (GPS) location, your contacts, your photos, your microphone, your camera,
+your files, your phone number and your card details. Ad and analytics services may estimate your approximate
+region from your IP address. Nothing is sold to anyone.
 
 ## 2. Who we are
 
@@ -91,16 +95,37 @@ game gets back is the confirmation that a purchase completed and which item to d
 The purchase history and receipt stay with Google and with your Google Play account, under Google's
 policies.
 
-### 3.4 Data that never leaves your device
+### 3.4 Analytics and crash reports — Google Firebase
+
+The game uses **Google Firebase Analytics** to understand how the game is played: which screens are opened,
+which buttons are pressed, which levels are started, won or lost, purchases and how many days players come
+back. Firebase links these events to an **app instance ID** and, where available, the **Android advertising
+ID**, together with device model, OS version, language and approximate region (from the IP address).
+
+**Google Firebase Crashlytics** sends a **crash report** when the game crashes: the technical error, the
+device model and OS version, and a Crashlytics installation ID used to count how many players a crash
+affects.
+
+Google processes this data under the [Firebase privacy and security terms](https://firebase.google.com/support/privacy).
+
+### 3.5 Advertising measurement — TikTok
+
+We advertise Void Bounce on TikTok. To know whether those ads work, the game includes the **TikTok Events
+SDK**, which sends to TikTok the **Android advertising ID**, device data (model, OS version, language,
+IP address), the **install** and **app-open** events and **purchase** events. TikTok uses this data to
+attribute installs to our ads and to measure and optimise ad delivery, under the [TikTok Privacy
+Policy](https://www.tiktok.com/legal/privacy-policy). You can limit this by deleting or resetting your
+advertising ID in Android settings (Section 7).
+
+### 3.6 Data that never leaves your device
 
 Level progress, stars, coins, lives, skins and accessories, missions, achievements and your sound and
 music preferences are written **only to the app's own storage** on your device. This data is never sent
 to us or to anyone else, and it disappears when you uninstall the game or clear the app's data in Android
 settings.
 
-### 3.5 What the game does not do
+### 3.7 What the game does not do
 
-- We use no behavioural analytics, neither our own nor third-party.
 - We neither request nor access location, contacts, photos, files, camera or microphone.
 - We create no account, ask for no sign-up, no email address and no password.
 - We do not sell, rent or trade personal data with anyone.
@@ -113,6 +138,9 @@ settings.
   it; elsewhere it rests on the legitimate interest of sustaining the app, and you can limit it in
   Android itself (Section 7).
 - **Purchases:** to perform the contract for the item you bought.
+- **Analytics and crash reports:** to fix bugs and improve the game (legitimate interest).
+- **Advertising measurement:** to know which of our ads bring players (legitimate interest; consent where
+  the law requires it).
 - **Running the game:** so your progress is not lost between sessions.
 
 Under the LGPD (Law 13.709/2018), the legal bases are consent (art. 7, I), performance of a contract
@@ -121,20 +149,22 @@ United Kingdom these correspond to Article 6(1)(a), (b) and (f) of the GDPR.
 
 ## 5. Who the data is shared with
 
-The data described in this policy is shared exclusively with **Google LLC and its affiliates**, acting as
-processors of the services the game uses:
+The data described in this policy is shared only with **Google LLC and its affiliates** and with **TikTok**,
+for the services the game uses:
 
 - **Google Play Games Services** — player name, player ID, profile picture and scores;
 - **Google AdMob** — advertising ID and device data, to serve and measure ads;
-- **Google Play Billing** — payment processing and purchase confirmation.
+- **Google Play Billing** — payment processing and purchase confirmation;
+- **Google Firebase Analytics and Crashlytics** — in-game events, identifiers and crash reports;
+- **TikTok** — advertising ID, device data, install, app-open and purchase events, to measure our ads.
 
 There is no other recipient. We may disclose data when legally compelled to do so by a competent
 authority, and we will inform the player whenever the law allows it.
 
 ## 6. International transfers
 
-Google's services run on servers outside Brazil, including in the United States. Using the leaderboard,
-seeing ads or making a purchase transfers your data to those servers. Google states that it applies the
+Google's and TikTok's services run on servers outside Brazil, including in the United States. Playing the
+game transfers the data described above to those servers. Google states that it applies the
 safeguards required by applicable law, including standard contractual clauses, as described in the
 [Google Privacy Policy](https://business.safety.google/privacy/).
 
@@ -147,6 +177,9 @@ We keep no copy of anything. Each type of data has its own deletion path:
 | Leaderboard name and score | As long as the leaderboard exists, or until you ask for removal | Email our privacy contact asking for your entry to be removed; or delete your Play Games data in the Google Play Games app, under Settings › Delete Play Games account data |
 | Advertising ID | Set by Google; you can reset it at any time | Android › Settings › Google › Ads: delete or reset the advertising ID and turn off personalisation |
 | Purchase record | Tax and accounting period determined by Google | Through Google Play support — we have no access to that record |
+| Analytics events (Firebase) | Up to 14 months, per our Firebase retention setting | Email our privacy contact; or reset your advertising ID |
+| Crash reports (Crashlytics) | 90 days | Deleted automatically |
+| Ad measurement data (TikTok) | As set by TikTok's policy | Reset your advertising ID; contact TikTok through its privacy policy |
 | Progress on your device | Until you uninstall | Uninstall the game, or clear the app's data in Android settings |
 
 Deletion requests sent to **Lsg.g.dev@gmail.com** are handled within **30 calendar days**. To let us find
@@ -155,7 +188,7 @@ your leaderboard entry, include your player name exactly as it appears on the bo
 ## 8. Security
 
 The game opens no network connections of its own and sends no data to servers of ours — there are no
-servers of ours. All communication with Google services goes through Google's official SDKs over
+servers of ours. All communication with Google and TikTok goes through their official SDKs over
 encrypted channels (HTTPS/TLS).
 
 Data written on your device lives in the app's private storage area, which Android isolates from other
@@ -205,6 +238,6 @@ Write in English or Portuguese. We reply within 30 calendar days.
 
 ---
 
-Void Bounce Privacy Policy — version 1.0, effective 17 September 2026.
-Applies to the Void Bounce application (`com.lucas.bolanoscilindros`) distributed on the Google Play
+Void Bounce Privacy Policy — version 1.1, effective 21 October 2026.
+Applies to the Void Bounce application (`void.bounce`) distributed on the Google Play
 Store by TICTICTIC.
